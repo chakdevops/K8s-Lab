@@ -1,11 +1,11 @@
-apiVersion: batch/v2
+apiVersion: batch/v1
 kind: Job
 metadata:
   name: counter
 spec:
-  completions: 4
-  parallelism: 2
-  #backofflimit: 5
+  completions: 1
+  parallelism: 1
+  backofflimit: 6
   template:
     spec:
       restartPolicy: OnFailure
