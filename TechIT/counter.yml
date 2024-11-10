@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: counter
+spec:
+  completions: 4
+  parallelism: 2
+  backofflimit: 5
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+      - args:
+        - /bin/sh
+        - -c
+        - ...
+        image: nginix:1.24.0 
+        name: counter
