@@ -5,7 +5,7 @@ metadata:
 spec:
   completions: 4
   parallelism: 2
-  backoflimit: 5
+  backofflimit: 5
   template:
     spec:
       restartPolicy: OnFailure
