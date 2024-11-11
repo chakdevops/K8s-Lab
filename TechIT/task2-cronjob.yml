@@ -7,7 +7,7 @@ spec:
     metadata:
         name: current-date
         spec:
-          template:
+            template:
             spec:
               restartPolicy: Never
               containers:
