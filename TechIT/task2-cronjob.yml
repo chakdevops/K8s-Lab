@@ -3,6 +3,7 @@ kind: CronJob
 metadata:
   name: current-date
 spec:
+  schedule: '* * * * *'
   jobTemplate:
     metadata:
       name: current-date
@@ -17,4 +18,3 @@ spec:
             - /bin/sh
             - -c
             - 'echo "Current date: $(date)"'
-  schedule: '* * * * *'
