@@ -17,4 +17,4 @@ spec:
             - /bin/sh
             - -c
             - 'echo "Current date: $(date)"'
-schedule: '* * * * *'
+  schedule: '* * * * *'
