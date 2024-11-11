@@ -11,10 +11,10 @@ spec:
         spec:
           restartPolicy: Never
           containers:
-          - command:
+          - image: nginx:1.21.6
+            name: current-date
+            command:
             - /bin/sh
             - -c
             - 'echo "Current date: $(date)"'
-            image: nginx:1.21.6
-            name: current-date
-            schedule: '* * * * *'
+schedule: '* * * * *'
