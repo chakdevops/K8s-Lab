@@ -5,7 +5,7 @@ metadata:
 spec:
   jobTemplate:
     metadata:
-    name: current-date
+      name: current-date
     spec:
       template:
         spec:
