@@ -12,4 +12,4 @@ spec:
         - name: random-hash
           image: alpine:3.17.3
           command: ["/bin/sh", "-c", "echo $RANDOM | base64 | head -c 20"]
-        restartPolicy: Always
+        #restartPolicy: OnFailure
