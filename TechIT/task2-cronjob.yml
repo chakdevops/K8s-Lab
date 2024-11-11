@@ -6,15 +6,15 @@ spec:
   jobTemplate:
     metadata:
       name: current-date
-  spec:
-    template:
       spec:
-        restartPolicy: Never
-        containers:
-        - command:
-        - /bin/sh
-        - -c
-        - 'echo "Current date: $(date)"'
-        image: nginx:1.21.6
-        name: current-date
-        schedule: '* * * * *'
+        template:
+          spec:
+            restartPolicy: Never
+            containers:
+            - command:
+            - /bin/sh
+            - -c
+            - 'echo "Current date: $(date)"'
+            image: nginx:1.21.6
+            name: current-date
+            schedule: '* * * * *'
